@@ -1,0 +1,19 @@
+var firstName = "Shruthi"
+//var firstName = "Nandakumar" // redeclaration is allowed
+//console.log(firstName)
+firstName = "Playwright" //re-initialization is allowed
+console.log(firstName)
+//console.log(empNo) //Hoisting is allowed
+//var empNo = 12345
+
+function print()
+{
+    var empAge = 38
+    {
+        var empPhoneNumber = 9999911111;
+    }
+    //console.log(empPhoneNumber)
+}
+print()
+console.log(empPhoneNumber) // ReferenceError: empPhoneNumber is not defined. Because var is Functionscoped
+
